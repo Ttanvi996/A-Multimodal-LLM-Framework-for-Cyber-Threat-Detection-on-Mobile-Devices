@@ -87,8 +87,11 @@ This adds interpretability and makes the results accessible to non-experts.
 ##  **Example Output**
 
 Module: Network Intrusion
+
 Predicted Label: DDoS
+
 Confidence: 0.98
+
 Risk Score: 9.0 (Critical)
 
 Explanation:
@@ -146,25 +149,25 @@ indicating a Distributed Denial of Service attack. Immediate mitigation is recom
 
 ### 1. Install dependencies
 
-+pip install -r requirements.txt
+*pip install -r requirements.txt
 
 
 ### 2. Train individual ML models
 
-+python train_network_model.py
-+python train_url_model.py
-+python train_malware_model.py
-+python train_audio_model.py
+*python train_network_model.py
+*python train_url_model.py
+*python train_malware_model.py
+*python train_audio_model.py
 
 
 ### 3. Run the unified threat detection pipeline
 
-+python multimodal_pipeline.py
+*python multimodal_pipeline.py
 
 
 ### 4. Generate an LLM-based report
 
-+python generate_report.py
+*python generate_report.py
 
 
 ## **Conclusion**
