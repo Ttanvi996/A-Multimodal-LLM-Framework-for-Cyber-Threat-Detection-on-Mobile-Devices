@@ -5,18 +5,12 @@ This project presents a multimodal cyber threat detection system that integrates
 The goal is to build an interpretable, mobile-friendly threat detection pipeline capable of analyzing multiple attack vectors and providing users with clear, actionable insights.
 
 Project Overview:- 
-
-1.Modern cybersecurity attacks are increasingly complex and often span multiple data types (network flows, URLs, images, audio). Traditional systems rely on a single modality and fail to detect multi-stage or evolving threats.
-
-2.This project introduces a hybrid ML + LLM architecture 
-
-3.Four independent ML models classify threats in their respective domains.
-
-4.A lightweight LLM (TinyLlama-1.1B-Chat) converts model predictions, risk scores, and confidence levels into human-readable reports.
-
-5.The entire pipeline is designed with low computational overhead, making it suitable for mobile or lightweight deployment contexts.
-
-6.Each modality has its own preprocessing pipeline and threat classifier.
+ + Modern cybersecurity attacks are increasingly complex and often span multiple data types (network flows, URLs, images, audio). Traditional systems rely on a single modality and fail to detect multi-stage or evolving threats.
+ + This project introduces a hybrid ML + LLM architecture
+ + Four independent ML models classify threats in their respective domains.
+ + A lightweight LLM (TinyLlama-1.1B-Chat) converts model predictions, risk scores, and confidence levels into human-readable reports.
+ + The entire pipeline is designed with low computational overhead, making it suitable for mobile or lightweight deployment contexts.
+ + Each modality has its own preprocessing pipeline and threat classifier.
 
 System Architecture:- 
 
