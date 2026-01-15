@@ -2,7 +2,7 @@
 
 # **Multimodal LLM Framework for Cyber Threat Detection on Mobile Devices**
 
-This project presents a multimodal cyber threat detection system that integrates machine-learning models across four different cybersecurity domains—**network intrusion, phishing URLs, malware images, and audio spoofing**—and combines them with an **LLM-based explanation layer** to generate human-readable security reports.
+This project explains how a cyber threat detection system integrates machine-learning models across four different cybersecurity domains—**network intrusion, phishing URLs, malware images, and audio spoofing**—and combines them with an **LLM-based explanation layer** to generate human-readable security reports.
 
 The goal is to build an interpretable, mobile-friendly threat detection pipeline capable of analyzing multiple attack vectors and providing users with clear, actionable insights.
 
@@ -84,7 +84,7 @@ This adds interpretability and makes the results accessible to non-experts.
 
 
 
-##  **Example Output (High-Level)**
+##  **Example Output**
 
 Module: Network Intrusion
 Predicted Label: DDoS
@@ -106,22 +106,6 @@ indicating a Distributed Denial of Service attack. Immediate mitigation is recom
 * ✔ **Complete ML + LLM pipeline for cybersecurity**
 
 
-
-##  **Project Structure (Suggested GitHub Layout)**
-
-├── data/
-├── models/
-│   ├── network_intrusion/
-│   ├── phishing_url/
-│   ├── malware_image/
-│   └── audio_spoof/
-├── preprocessing/
-├── notebooks/
-├── llm_report/
-├── results/
-└── README.md
-
-
 ##  **Technologies Used**
 
 * **Python**
@@ -132,7 +116,6 @@ indicating a Distributed Denial of Service attack. Immediate mitigation is recom
 * **TinyLlama-1.1B-Chat**
 * **NumPy / Pandas**
 * **Matplotlib / Seaborn**
-
 
 
 ##  **Performance Highlights**
