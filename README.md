@@ -2,7 +2,7 @@
 
 # **Multimodal LLM Framework for Cyber Threat Detection on Mobile Devices**
 
-This project explains how a cyber threat detection system integrates machine-learning models across four different cybersecurity domains—**network intrusion, phishing URLs, malware images, and audio spoofing**—and combines them with an **LLM-based explanation layer** to generate human-readable security reports.
+This project explains how a cyber threat detection system integrates machine-learning models across four different cybersecurity domains— network intrusion, phishing URLs, malware images, and audio spoofing and combines them with an LLM-based explanation layer to generate human-readable security reports.
 
 The goal is to build an interpretable, mobile-friendly threat detection pipeline capable of analyzing multiple attack vectors and providing users with clear, actionable insights.
 
@@ -21,10 +21,10 @@ This project introduces a **hybrid ML + LLM architecture** where:
 
 The framework has four main layers:
 
-1. **Data Preprocessing**
-2. **Embedding Generation (Feature Extraction)**
-3. **Threat Detection Layer (ML Models)**
-4. **Risk Reporting Layer (LLM)**
+1. Data Preprocessing
+2. Embedding Generation (Feature Extraction)
+3. Threat Detection Layer (ML Models)
+4. Risk Reporting Layer (LLM)
 
 Each modality has its own preprocessing pipeline and threat classifier.
 
@@ -50,14 +50,14 @@ Each modality has its own preprocessing pipeline and threat classifier.
 
 * 9,342 grayscale malware images across 25 families
 * Image preprocessing: resize to 64×64, normalize
-* Model: Lightweight **CNN with Global Average Pooling**
+* Model: Lightweight **CNN with Global Average Pooling
 * Output: Malware family classification
 
 
 ### **4.ASVspoof 2019 — Audio Spoofing Detection**
 
 * 20k+ training samples
-* Extracted **MFCC features** (mean + STD)
+* Extracted MFCC features (mean + STD)
 * Model: Feed-forward neural network for binary classification (bonafide vs spoof)
 
 ##  **Threat Detection Pipeline**
@@ -68,12 +68,12 @@ For each dataset, the ML model outputs:
 * **Confidence Score**
 * **Base Risk Value**
 
-These predictions are standardized and passed to the **LLM layer**.
+These predictions are standardized and passed to the LLM layer.
 
 
 ##  **LLM-Based Explanation Layer**
 
-A lightweight LLM — **TinyLlama-1.1B-Chat-v1.0** — is used to generate:
+A lightweight LLM — TinyLlama-1.1B-Chat-v1.0 — is used to generate:
 
 * Human-readable security reports
 * Practical explanations of the threat
@@ -98,12 +98,12 @@ indicating a Distributed Denial of Service attack. Immediate mitigation is recom
 
 ## **Key Contributions**
 
-* ✔ **Unified multimodal threat detection across 4 data types**
-* ✔ **Lightweight LLM used for interpretability**
-* ✔ **Mobile-friendly architecture**
-* ✔ **High accuracy models (CNN, FFNN, MFCC-based classifiers)**
-* ✔ **Unified risk scoring system**
-* ✔ **Complete ML + LLM pipeline for cybersecurity**
+*  **Unified multimodal threat detection across 4 data types**
+*  **Lightweight LLM used for interpretability**
+*  **Mobile-friendly architecture**
+*  **High accuracy models (CNN, FFNN, MFCC-based classifiers)**
+*  **Unified risk scoring system**
+*  **Complete ML + LLM pipeline for cybersecurity**
 
 
 ##  **Technologies Used**
@@ -146,30 +146,30 @@ indicating a Distributed Denial of Service attack. Immediate mitigation is recom
 
 ### 1. Install dependencies
 
-pip install -r requirements.txt
++pip install -r requirements.txt
 
 
 ### 2. Train individual ML models
 
-python train_network_model.py
-python train_url_model.py
-python train_malware_model.py
-python train_audio_model.py
++python train_network_model.py
++python train_url_model.py
++python train_malware_model.py
++python train_audio_model.py
 
 
 ### 3. Run the unified threat detection pipeline
 
-python multimodal_pipeline.py
++python multimodal_pipeline.py
 
 
 ### 4. Generate an LLM-based report
 
-python generate_report.py
++python generate_report.py
 
 
 ## **Conclusion**
 
-This project successfully integrates **multimodal ML models** with an **LLM explanation layer**, providing a comprehensive and interpretable cybersecurity solution. The architecture is lightweight, extensible, and suitable for real-world applications, especially mobile threat detection.
+This project successfully integrates multimodal ML models with an LLM explanation layer, providing a comprehensive and interpretable cybersecurity solution. The architecture is lightweight, extensible, and suitable for real-world applications, especially mobile threat detection.
 
 
 ## **Future Work**
