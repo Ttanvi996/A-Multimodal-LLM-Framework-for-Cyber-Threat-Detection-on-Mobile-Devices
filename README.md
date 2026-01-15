@@ -20,20 +20,11 @@ Project Overview:-
 
 System Architecture:- 
 
-The framework has four main layers:
-
-1.Data Preprocessing
-
-2.Embedding Generation (Feature Extraction)
-
-3.Threat Detection Layer (ML Models)
-
-4.Risk Reporting Layer (LLM)
+The framework has four main layers: Data Preprocessing, Embedding Generation (Feature Extraction), Threat Detection Layer (ML Models) and Risk Reporting Layer (LLM)
 
 Datasets Used:- 
 
-1.CICIDS2017 — Network Intrusion Detection= ~2.3M network flow records, 
-15 classes (benign + 14 attack types)
+1.CICIDS2017 — Network Intrusion Detection= ~2.3M network flow records,  15 classes (benign + 14 attack types)
 Preprocessing: merging 8 CSV files, cleaning features, label encoding
 Model: Feed-forward neural network with learned embeddings
 
@@ -85,6 +76,7 @@ Key Contributions:-
 5.Unified risk scoring system
 
 6.Complete ML + LLM pipeline for cybersecurity
+
 
 Technologies Used:- 
 
