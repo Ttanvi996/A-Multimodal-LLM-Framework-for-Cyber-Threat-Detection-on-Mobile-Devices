@@ -8,7 +8,7 @@ The goal is to build an interpretable, mobile-friendly threat detection pipeline
 
 ##  **Project Overview**
 
-Modern cybersecurity attacks are increasingly complex and often span multiple data types (network flows, URLs, images, audio). Traditional systems rely on a single modality and fail to detect multi-stage or evolving threats.
+Modern cybersecurity attacks are increasingly complex and often leave out multiple data types (network flows, URLs, images, audio). Traditional systems rely on a single modality and fail to detect multi-stage or evolving threats.
 
 This project introduces a **hybrid ML + LLM architecture** where:
 
@@ -80,7 +80,7 @@ A lightweight LLM — TinyLlama-1.1B-Chat-v1.0 — is used to generate:
 * Severity rating (1–10)
 * Recommended action summaries
 
-This adds interpretability and makes the results accessible to non-experts.
+This adds interpretability and makes the results accessible to non-technical members.
 
 
 
@@ -95,8 +95,7 @@ Confidence: 0.98
 Risk Score: 9.0 (Critical)
 
 Explanation:
-This flow pattern shows extremely high traffic bursts with repetitive packet sequences,
-indicating a Distributed Denial of Service attack. Immediate mitigation is recommended.
+This flow pattern shows  high traffic with repetitive packet sequences, which indicates  Distributed Denial of Service attack. Immediate mitigation is recommended.
 
 
 ## **Key Contributions**
@@ -154,14 +153,10 @@ pip install -r requirements.txt
 
 ### 2. Train individual ML models
 
-python train_network_model.py
-
-python train_url_model.py
-
-python train_malware_model.py
-
-python train_audio_model.py
-
+* python train_network_model.py
+* python train_url_model.py
+* python train_malware_model.py
+* python train_audio_model.py
 
 ### 3. Run the unified threat detection pipeline
 
@@ -175,7 +170,7 @@ python generate_report.py
 
 ## **Conclusion**
 
-This project successfully integrates multimodal ML models with an LLM explanation layer, providing a comprehensive and interpretable cybersecurity solution. The architecture is lightweight, extensible, and suitable for real-world applications, especially mobile threat detection.
+This project integrates multimodal ML models with an LLM explanation layer, providing a  interpretable cybersecurity solution. The architecture is lightweight, extensible, and suitable for real-world applications, especially mobile threat detection.
 
 
 ## **Future Work**
