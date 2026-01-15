@@ -35,16 +35,18 @@ The framework has four main layers: Data Preprocessing, Embedding Generation (Fe
    Extracted MFCC features (mean + STD)
    Model: Feed-forward neural network for binary classification (bonafide vs spoof)
 
-5.Threat Detection Pipeline
+5.Threat Detection Pipeline:-
+
 For each dataset, the ML model outputs: Predicted Label, Confidence Score, Base Risk Value
 These predictions are standardized and passed to the LLM layer.
 
 6.LLM-Based Explanation Layer:- 
+
 A lightweight LLM — TinyLlama-1.1B-Chat-v1.0 — is used to generate:
-1.Human-readable security reports
-2.Practical explanations of the threat
-3.Severity rating (1–10)
-This adds interpretability and makes the results accessible to non-experts.
+ + Human-readable security reports
+ + Practical explanations of the threat
+ + Severity rating (1–10)
+ + This adds interpretability and makes the results accessible to non-experts.
 
 
 Example Output :- 
@@ -99,7 +101,8 @@ Conclusion:-
 This project successfully integrates multimodal ML models with an LLM explanation layer, providing a comprehensive and interpretable cybersecurity solution. The architecture is lightweight, extensible, and suitable for real-world applications, especially mobile threat detection.
 
 Future Work:-
-1.Add real-time streaming support
-2.Mobile deployment (TensorFlow Lite / ONNX)
-3.Add more modalities (logs, emails, images)
-4.Expand LLM to generate actionable remediation steps
+
+ + Add real-time streaming support
+ + Mobile deployment (TensorFlow Lite / ONNX)
+ + Add more modalities (logs, emails, images)
+ + Expand LLM to generate actionable remediation steps
