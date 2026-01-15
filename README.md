@@ -1,4 +1,4 @@
-**1.Project Title ** :- Multimodal LLM Framework for Cyber Threat Detection on Mobile Devices
+**Project Title :- Multimodal LLM Framework for Cyber Threat Detection on Mobile Devices**
 
 This project presents a multimodal cyber threat detection system that integrates machine-learning models across four different cybersecurity domains—network intrusion, phishing URLs, malware images, and audio spoofing—and combines them with an LLM-based explanation layer to generate human-readable security reports.
 
