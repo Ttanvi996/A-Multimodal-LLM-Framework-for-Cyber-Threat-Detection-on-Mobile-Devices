@@ -96,11 +96,11 @@ python multimodal_pipeline.py
 4. Generate an LLM-based report
 python generate_report.py
 
-Conclusion:-
+8.Conclusion:-
 
 This project successfully integrates multimodal ML models with an LLM explanation layer, providing a comprehensive and interpretable cybersecurity solution. The architecture is lightweight, extensible, and suitable for real-world applications, especially mobile threat detection.
 
-Future Work:-
+9.Future Work:-
 
  + Add real-time streaming support
  + Mobile deployment (TensorFlow Lite / ONNX)
