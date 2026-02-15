@@ -175,7 +175,7 @@ This project integrates multimodal ML models with an LLM explanation layer, prov
 ## **Future Work**
 
 * Add real-time streaming support
-* Mobile deployment (TensorFlow Lite / ONNX)
+* Mobile deployment (TensorFlow Lite)
 * Add more modalities (logs, emails, images)
 * Expand LLM to generate actionable remediation steps
 
